@@ -1,0 +1,35 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.search {
+  background: rgb(15, 90, 121);
+  background: linear-gradient(
+    0deg,
+    rgba(15, 90, 121, 1) 11%,
+    rgba(45, 253, 208, 1) 99%
+  );
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.bounce {
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
+}
