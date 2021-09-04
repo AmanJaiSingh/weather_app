@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Chhavi from "./imgs/Chhavi.jpeg";
-import Aman from "./imgs/Aman.jpeg";
 
 export default function WeatherApp() {
   const [city, setCity] = useState("Mumbai");
