@@ -1,6 +1,6 @@
 {
   "name": "weathear_app",
-  "homepage": "https://AmanJaiSingh.github.io/Weather",
+  "homepage": "https://AmanJaiSingh.github.io/weather_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
