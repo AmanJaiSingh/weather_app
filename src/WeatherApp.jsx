@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Menu from "./menu";
+import Aman from "./imgs/Aman.jpg";
+import Chhavi from "./imgs/Chhavi.jpg";
 
 export default function WeatherApp() {
   const [city, setCity] = useState("Mumbai");
@@ -8,13 +11,9 @@ export default function WeatherApp() {
   const CityChange = (event) => {
     const data = event.target.value;
     if (data === "Gangoh") {
-      setBg(
-        "https://cache.careers360.mobi/media/schools/social-media/media-gallery/19693/2019/8/29/Silver%20Oak%20Public%20School-Campus%20View.jpg"
-      );
+      setBg(Chhavi);
     } else if (data === "Roorkee") {
-      setBg(
-        "https://images.jdmagicbox.com/comp/roorkee/t7/9999px651.x651.110116182500.u5t7/catalogue/delhi-public-school-roorkee-ho-roorkee-cbse-schools-yv1j0py.jpg"
-      );
+      setBg(Aman);
     } else {
       setBg("");
     }
@@ -42,7 +41,7 @@ export default function WeatherApp() {
           <h1 className="text-3xl text-gray-400 drop-shadow-2xl -pt-5 pb-10">
             Wheather app
           </h1>
-          <div className=" h-96 w-72 rounded-3xl search shadow-2xl flex flex-col items-center pb-6">
+          <div className=" h-96 w-72 rounded-3xl search shadow-2xl flex flex-col items-center pb-6  opacity-50">
             <input
               className=" mt-2 p-2 focus:outline-none rounded-full h-8 w-36"
               type="search"
