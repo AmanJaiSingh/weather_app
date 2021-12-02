@@ -1,11 +1,11 @@
 import React from "react";
-import WeatherApp from "./WeatherApp";
+import Main from "./Pages/main";
 
 function App() {
   return (
-    <>
-      <WeatherApp />{" "}
-    </>
+    <div>
+      <Main />
+    </div>
   );
 }
 
